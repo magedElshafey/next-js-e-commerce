@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { hasLocale } from "next-intl";
 import { routing } from "@/src/i18n/routing";
-import { QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import queryClient from "@/src/_lib/react-qyery";
 import "../globals.css";
 import LocaleProviders from "@/src/_components/local-providers/LocaleProviders";
 type Props = {
