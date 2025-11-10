@@ -1,0 +1,12 @@
+{
+  "Home": {
+    "title": "test"
+  },
+  "Login": {
+    "title": "welcome"
+  },
+  "Locale": {
+    "ar": "arabic",
+    "en": "english"
+  }
+}
