@@ -5,7 +5,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import queryClient from "@/src/_lib/react-qyery";
 import "../globals.css";
-
+import LocaleProviders from "@/src/_components/local-providers/LocaleProviders";
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -22,12 +22,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body>
-        <QueryClientProvider client={queryClient}>
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
-            <ReactQueryDevtools initialIsOpen={false} />
-          </NextIntlClientProvider>
-        </QueryClientProvider>
+        <LocaleProviders locale={locale} messages={messages}>
+          {children}
+          <ReactQueryDevtools initialIsOpen={false} />
+        </LocaleProviders>
       </body>
     </html>
   );

@@ -23,7 +23,7 @@ const LanguageSwitcher = () => {
       {isLoginPages ? (
         <button
           onClick={switchLanguage}
-          className={`fixed bottom-6 right-6 z-50 flex-center gap-2 p-2 rounded-md bg-white/90 backdrop-blur-sm text-gray-700 hover:bg-white shadow-md border border-gray-200 transition-all `}
+          className={`fixed bottom-18 right-6 z-50 flex-center gap-2 p-2 rounded-md bg-white/90 backdrop-blur-sm text-gray-700 hover:bg-white shadow-md border border-gray-200 transition-all `}
         >
           <Image
             alt="language-flag"
