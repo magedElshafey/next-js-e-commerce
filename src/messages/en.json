@@ -1,4 +1,14 @@
 {
+  "SEO": {
+    "defaultTitle": "abazeer - The best site for your products",
+    "defaultDescription": "Discover our unique products at the best prices. Shop now and have a unique experience.",
+    "company": "qutell technology expert"
+  },
+  "PageMetaData": {
+    "About": {
+      "title": "about us"
+    }
+  },
   "Home": {
     "title": "test"
   },
@@ -8,5 +18,13 @@
   "Locale": {
     "ar": "arabic",
     "en": "english"
+  },
+  "Footer": {
+    "abazeer": "abazeer"
+  },
+  "NotFound": {
+    "Oops": "Oops! The page you are looking for doesn’t exist.",
+    "back": "back to home page",
+    "404": "404"
   }
 }

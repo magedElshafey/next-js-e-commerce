@@ -1,6 +1,6 @@
 import RightSide from "./_components/_layout/RightSide";
 import LeftSide from "./_components/_layout/LeftSide";
-import LanguageSwitcher from "@/src/_components/lang/LanguageSwitcher";
+import LanguageSwitcher from "@/_components/lang/LanguageSwitcher";
 type Props = {
   children: React.ReactNode;
 };

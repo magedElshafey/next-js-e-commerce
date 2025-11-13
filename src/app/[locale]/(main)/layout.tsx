@@ -1,4 +1,4 @@
-import LanguageSwitcher from "@/src/_components/lang/LanguageSwitcher";
+import ScrollToTopButton from "@/_components/scroll-to-top/ScrollToTop";
 
 type Props = {
   children: React.ReactNode;
@@ -6,9 +6,9 @@ type Props = {
 
 export default async function MainLayout({ children }: Props) {
   return (
-    <main>
-      <LanguageSwitcher />
-      {children}
-    </main>
+    <div className="flex flex-col min-h-screen">
+      <ScrollToTopButton />
+      <main className="grow py-2 flex flex-col">{children}</main>
+    </div>
   );
 }

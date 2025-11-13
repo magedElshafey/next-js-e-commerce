@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { usePathname, useRouter } from "@/src/i18n/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { useQueryClient } from "@tanstack/react-query";
 const LanguageSwitcher = () => {
